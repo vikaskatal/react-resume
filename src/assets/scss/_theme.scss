@@ -1,0 +1,18 @@
+#root:not(.home-page) {
+  .myheader, .site-footer {
+    display: none;
+  }
+}
+
+body .home-page {
+  background-color: #1B1D20;
+  color: #CECECE;
+
+  .work .work__item__title span {
+    color: #CECECE;
+  }
+
+  .myheader__social .menu a:hover {
+    color: #fff;
+  }
+}

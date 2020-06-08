@@ -1,25 +1,42 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useEffect} from 'react';
+import './App.scss';
 
-function App() {
+import Header from './components/Header';
+import Footer from './components/Footer';
+import NotFound from './components/common/NotFound';
+
+import Home from './components/home/Home';
+import Work from './components/work/Work';
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  useLocation
+} from "react-router-dom";
+
+function App(props) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router render={pr => console.log(pr) } history={pr => console.log(pr) }>
+        <div>
+          <Header />
+            <Switch>
+              <Route exact path="/">
+                <Home />
+              </Route>
+              <Route exact path="/work/:id">
+                <Work />
+              </Route>
+              <Route exact path="*">
+                <NotFound />
+              </Route>
+            </Switch>
+          <Footer /> 
+        </div>
+    </Router>
+    </>
   );
 }
 
