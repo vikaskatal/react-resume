@@ -1,18 +1,16 @@
-#root:not(.home-page) {
-  .myheader, .site-footer {
-    display: none;
-  }
-}
-
-body .home-page {
-  background-color: #1B1D20;
-  color: #CECECE;
+.home-page {
+  background-color: #1b1d20;
+  color: #cecece;
 
   .work .work__item__title span {
-    color: #CECECE;
+    color: #cecece;
   }
 
-  .myheader__social .menu a:hover {
+  .my-nav .menu a:hover {
     color: #fff;
+  }
+
+  .my-header__name a {
+    color: var(--color-white);
   }
 }

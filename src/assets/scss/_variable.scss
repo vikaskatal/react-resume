@@ -1,10 +1,9 @@
 :root {
   --bg-color: #fff;
-  --text-color: #1B1D20;
+  --text-color: #1b1d20;
   --text-light: #666666;
   --color-white: #fff;
 }
-
 
 // Breakpoints
 $bp-small: 768px;
@@ -13,7 +12,6 @@ $bp-large: 1366px;
 $bp-largeHd: 1920px;
 $bp-large2k: 2560px;
 $bp-large4k: 3840px;
-
 
 @mixin tab {
   @media only screen and (min-width: $bp-small) {
@@ -50,7 +48,6 @@ $bp-large4k: 3840px;
     @content;
   }
 }
-
 
 @mixin tabMM {
   @media only screen and (max-width: $bp-small - 1) {

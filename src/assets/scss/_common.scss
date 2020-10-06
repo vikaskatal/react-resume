@@ -1,12 +1,12 @@
-@import url('https://rsms.me/inter/inter.css');
+@import url("https://rsms.me/inter/inter.css");
 
 html {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 @supports (font-variation-settings: normal) {
   html {
-    font-family: 'Inter var', sans-serif;
+    font-family: "Inter var", sans-serif;
   }
 }
 
@@ -52,49 +52,48 @@ a {
   cursor: pointer;
 }
 
-.mycontainer {
+.my-container {
   max-width: 1180px;
   padding: 0 15px;
   margin: 0 auto;
 
-  &.mycontainer--1000 {
+  &.my-container--1000 {
     max-width: 1030px;
   }
 
-  &.mycontainer--800 {
+  &.my-container--800 {
     max-width: 830px;
   }
 
-  &.mycontainer--880 {
+  &.my-container--880 {
     max-width: 910px;
   }
 
-  &.mycontainer--610 {
+  &.my-container--610 {
     max-width: 640px;
   }
 }
 
-.myheader {
+.my-header {
   display: flex;
   justify-content: space-between;
   padding-top: 77px;
   padding-bottom: 15px;
   align-items: flex-end;
   @include tabMM {
-    .myheader__social {
+    .my-nav {
       display: none;
     }
   }
 }
 
-.myheader__name {
+.my-header__name {
   a {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 700;
     font-size: 20px;
     line-height: 1;
-    color: var(--color-white);
     text-decoration: none;
   }
 
@@ -103,13 +102,13 @@ a {
   }
 }
 
-.myheader__social {
+.my-nav {
   .menu {
     display: flex;
 
     a {
       text-decoration: none;
-      transition: color .2s ease-in-out;
+      transition: color 0.2s ease-in-out;
     }
 
     li + li {
@@ -122,7 +121,7 @@ footer {
   padding-top: 67px;
   padding-bottom: 20px;
 
-  .myheader__social {
+  .my-nav {
     margin-bottom: 50px;
 
     .menu {
@@ -131,7 +130,7 @@ footer {
       li {
         & + li {
           margin-left: 0;
-          margin-top: 25px
+          margin-top: 25px;
         }
       }
     }
@@ -140,12 +139,11 @@ footer {
   @include tab {
     padding-top: 10px;
     padding-bottom: 70px;
-    .myheader__social {
+    .my-nav {
       display: none;
     }
   }
 }
-
 
 .copyright {
   line-height: 1.6;
@@ -154,7 +152,6 @@ footer {
     font-size: 16px;
   }
 }
-
 
 .btn {
   display: inline-block;
@@ -166,7 +163,7 @@ footer {
   padding: 8px 30px;
   border-radius: 4px;
   text-decoration: none;
-  transition: all .20s ease;
+  transition: all 0.2s ease;
 
   &:hover {
     color: var(--color-white);
@@ -175,11 +172,11 @@ footer {
 }
 
 .not-found {
-  height: 100vh;
+  min-height: 50vh;
   align-items: center;
   justify-content: center;
   display: flex;
-
+  background-color: #f1f1f1;
   p {
     font-weight: 900;
     font-size: 60px;
@@ -193,5 +190,8 @@ footer {
       font-weight: 300;
       line-height: 1.4;
     }
+  }
+  @include tab {
+    min-height: calc(100vh - 217px);
   }
 }

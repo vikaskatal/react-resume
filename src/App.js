@@ -1,43 +1,19 @@
-import React, {useEffect} from 'react';
-import './App.scss';
+import React from "react";
+import { BrowserRouter } from "react-router-dom";
+import { Helmet } from "react-helmet";
+import "./App.scss";
+import AppRoutes from "./App.routes";
+import { NAME } from "./constants";
 
-import Header from './components/Header';
-import Footer from './components/Footer';
-import NotFound from './components/common/NotFound';
-
-import Home from './components/home/Home';
-import Work from './components/work/Work';
-
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  useLocation
-} from "react-router-dom";
-
-function App(props) {
+const App = () => {
   return (
     <>
-      <Router render={pr => console.log(pr) } history={pr => console.log(pr) }>
-        <div>
-          <Header />
-            <Switch>
-              <Route exact path="/">
-                <Home />
-              </Route>
-              <Route exact path="/work/:id">
-                <Work />
-              </Route>
-              <Route exact path="*">
-                <NotFound />
-              </Route>
-            </Switch>
-          <Footer /> 
-        </div>
-    </Router>
+      {/* <Helmet defaultTitle={NAME} titleTemplate={`${NAME} | %s`} /> */}
+      <BrowserRouter>
+        <AppRoutes />
+      </BrowserRouter>
     </>
   );
-}
+};
 
 export default App;
