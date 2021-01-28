@@ -4,7 +4,7 @@ import { EMAIL, RESUME, LINKEDIN } from "../../constants";
 const NavLinks = () => {
   return (
     <div className="my-nav">
-      <ul className="menu">
+      <ul className="menu reset-ul">
         <li className="menu-item">
           <a rel="noopener noreferrer" target="_blank" href={RESUME}>
             Download resume
