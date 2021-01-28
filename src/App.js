@@ -8,7 +8,7 @@ import { NAME } from "./constants";
 const App = () => {
   return (
     <>
-      {/* <Helmet defaultTitle={NAME} titleTemplate={`${NAME} | %s`} /> */}
+      <Helmet defaultTitle={NAME} titleTemplate={`${NAME} | %s`} />
       <BrowserRouter>
         <AppRoutes />
       </BrowserRouter>

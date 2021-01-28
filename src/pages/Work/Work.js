@@ -4,10 +4,10 @@ import { ReactComponent as IconTop } from "../../assets/images/arrow-top.svg";
 import { Link } from "react-router-dom";
 
 import sec1 from "../../assets/images/sec1.svg";
-import brief from "../../assets/images/brief.png";
-import sec3 from "../../assets/images/sec3.svg";
-import media from "../../assets/images/media.png";
-import cycle from "../../assets/images/cycle.svg";
+// import brief from "../../assets/images/brief.png";
+// import sec3 from "../../assets/images/sec3.svg";
+// import media from "../../assets/images/media.png";
+// import cycle from "../../assets/images/cycle.svg";
 import { Helmet } from "react-helmet";
 
 const Work = () => {
@@ -25,7 +25,7 @@ const Work = () => {
               <span> Home </span>
             </Link>
           </div>
-          <img src={sec1} className="img-fluid" />
+          <img src={sec1} className="img-fluid" alt="sec 1" />
         </div>
         {/* <div className="my-container my-container--1000">
           <div className="sec-hero__info">
