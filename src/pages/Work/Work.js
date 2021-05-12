@@ -11,6 +11,10 @@ const Work = () => {
   const [workItem, setWorkItem] = useState(null);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
     if (params.id) {
       workList.forEach((item) => {
         if (item.id === parseInt(params.id)) {
