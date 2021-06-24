@@ -1,8 +1,5 @@
-export const Routes = {
-  HOME: "/",
-  WORK: "/work/:id",
-  NOTFOUND: "*",
-};
+export { workList } from "./work";
+export { Routes } from "./routes";
 
 export const FIRST_NAME = "Vikas";
 export const LAST_NAME = "Katal";

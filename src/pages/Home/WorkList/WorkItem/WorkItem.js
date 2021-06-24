@@ -1,5 +1,5 @@
 import React from "react";
-import { ReactComponent as IconArrow } from "../../assets/images/arrow.svg";
+import { ReactComponent as IconArrow } from "../../../../assets/images/arrow.svg";
 import { Link } from "react-router-dom";
 
 const WorkItem = ({ item: { id, name, tag } }) => {
