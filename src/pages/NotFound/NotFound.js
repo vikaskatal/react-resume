@@ -1,6 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import HomeTemplate from "../../templates/HomeTemplate/HomeTemplate";
+import MainTemplate from "../../templates/MainTemplate/MainTemplate";
 
 const NotFound = () => {
   return (
@@ -8,13 +8,13 @@ const NotFound = () => {
       <Helmet>
         <title>Page Not Found</title>
       </Helmet>
-      <HomeTemplate>
+      <MainTemplate>
         <div className="not-found">
           <p>
             404<span>Uh oh, looks like this page doesn't exist.</span>
           </p>
         </div>
-      </HomeTemplate>
+      </MainTemplate>
     </>
   );
 };

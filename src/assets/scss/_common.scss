@@ -53,110 +53,17 @@ a {
   cursor: pointer;
 }
 
+// have to remove later
 .my-container {
   max-width: 1180px;
   padding: 0 15px;
   margin: 0 auto;
-  &.my-container--1000 {
-    max-width: 1030px;
-  }
-
-  &.my-container--800 {
-    max-width: 830px;
-  }
-
-  &.my-container--880 {
-    max-width: 910px;
-  }
-
-  &.my-container--610 {
-    max-width: 640px;
-  }
 }
 
 .reset-ul {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-.my-header {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 77px;
-  padding-bottom: 15px;
-  align-items: center;
-  @include tabMM {
-    .my-nav {
-      display: none;
-    }
-  }
-}
-
-.my-header__name {
-  a {
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1;
-    text-decoration: none;
-  }
-
-  svg path {
-    fill: #000;
-  }
-}
-
-.my-nav {
-  .menu {
-    display: flex;
-
-    a {
-      text-decoration: none;
-      transition: color 0.2s ease-in-out;
-    }
-
-    li + li {
-      margin-left: 20px;
-    }
-  }
-}
-
-footer {
-  padding-top: 67px;
-  padding-bottom: 20px;
-
-  .my-nav {
-    margin-bottom: 50px;
-
-    .menu {
-      display: block;
-
-      li {
-        & + li {
-          margin-left: 0;
-          margin-top: 25px;
-        }
-      }
-    }
-  }
-
-  @include tab {
-    padding-top: 10px;
-    padding-bottom: 70px;
-    .my-nav {
-      display: none;
-    }
-  }
-}
-
-.copyright {
-  line-height: 1.6;
-  font-size: 12px;
-  @include tab {
-    font-size: 16px;
-  }
 }
 
 .btn {

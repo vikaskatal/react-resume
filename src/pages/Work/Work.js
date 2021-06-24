@@ -4,7 +4,7 @@ import { ReactComponent as IconBack } from "../../assets/images/arrow-back.svg";
 import { ReactComponent as IconTop } from "../../assets/images/arrow-top.svg";
 import { Link, useParams } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import { workList } from "../../constants/work";
+import { workList } from "../../constants";
 import LazyImage from "../../components/LazyImage/LazyImage";
 import placeholderImage from "../../assets/images/placeholder_image.png";
 

@@ -3,7 +3,7 @@ import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
 import ChildrenProp from "../../prop-types/ChildrenProp";
 
-const HomeTemplate = ({ children, homepage }) => {
+const MainTemplate = ({ children, homepage }) => {
   return (
     <main className={homepage && "home-page"}>
       <Header />
@@ -13,12 +13,12 @@ const HomeTemplate = ({ children, homepage }) => {
   );
 };
 
-HomeTemplate.propTypes = {
+MainTemplate.propTypes = {
   children: ChildrenProp.isRequired,
 };
 
-HomeTemplate.default = {
+MainTemplate.default = {
   homepage: false,
 };
 
-export default HomeTemplate;
+export default MainTemplate;
