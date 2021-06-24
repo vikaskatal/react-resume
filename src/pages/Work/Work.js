@@ -5,6 +5,8 @@ import { ReactComponent as IconTop } from "../../assets/images/arrow-top.svg";
 import { Link, useParams } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { workList } from "../../constants/work";
+import LazyImage from "../../components/LazyImage/LazyImage";
+import placeholderImage from "../../assets/images/placeholder_image.png";
 
 const Work = () => {
   const params = useParams();
@@ -117,9 +119,13 @@ const Work = () => {
           {workItem.images?.length > 0 && (
             <div className="horizontal-images-wrapper">
               <div className="horizontal-images">
-                {workItem.images.map(({ url, name }, index) => (
+                {workItem.images.map(({ url, label }, index) => (
                   <div key={"hs_" + index}>
-                    <img src={url} className="" alt={name} />
+                    <LazyImage
+                      url={url}
+                      alt={label}
+                      placeholder={placeholderImage}
+                    />
                   </div>
                 ))}
               </div>

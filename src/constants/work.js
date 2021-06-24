@@ -47,22 +47,22 @@ export const workList = [
     images: [
       {
         url: clinkHome,
-        label: "",
+        label: "Clink Home Page",
         description: "",
       },
       {
         url: clinkHiw,
-        label: "",
+        label: "Clink How it work Slider Section",
         description: "",
       },
       {
         url: clinkVideo,
-        label: "",
+        label: "Clink Video Series Page",
         description: "",
       },
       {
         url: clinkMobile,
-        label: "",
+        label: "Clink Mobile Screens",
         description: "",
       },
     ],
