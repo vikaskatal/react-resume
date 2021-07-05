@@ -1,41 +1,20 @@
-import clinkHome from "../assets/images/clink_home.jpg";
-import clinkHiw from "../assets/images/clink_hiw.jpg";
-import clinkVideo from "../assets/images/clink_video.jpg";
-import clinkMobile from "../assets/images/clink_mobile.jpg";
+import clinkHome from "../assets/images/clink/clink_home.jpg";
+import clinkHiw from "../assets/images/clink/clink_hiw.jpg";
+import clinkVideo from "../assets/images/clink/clink_video.jpg";
+import clinkMobile from "../assets/images/clink/clink_mobile.jpg";
+import clinkLogo from "../assets/images/clink/clink_logo.png";
+
+import DockablLogo from "../assets/images/dockabl/dockabl_logo.png";
 
 export const workList = [
   {
     id: 1,
-    name: "Dockabl",
-    tag: "Work management app",
-    description: "Work management app",
-    url: "app.dockabl.com",
-    color: {
-      code: "#335aff",
-      theme: "dark",
-    },
-    about: [
-      "An employee experience platform, that enhances productivity, enables continuous performance & drives engagement in an effective way.",
-      "A SAAS based tool, we’re nimble & flexible, with a superior interface & a rich feature set like Objectives & Key Results, Reviews, Recognition, Feedback, etc",
-    ],
-    images: [],
-    technologies: [
-      "Front-End",
-      "HTML5",
-      "CSS3 preprocessed with SASS",
-      "Javascript",
-      "AngularJS",
-      "React",
-      "ECMAScript",
-      "Webpack",
-    ],
-  },
-  {
-    id: 2,
     name: "Clink Website",
     tag: "Feedback sharing app for teams",
     description: "Feedback sharing app for teams",
-    url: "https://www.clink.work",
+    // url: "https://www.clink.work",
+    url: "https://www.linkedin.com/company/clinkatwork/",
+    logo: clinkLogo,
     color: {
       code: "#efb959",
       theme: "dark",
@@ -72,6 +51,33 @@ export const workList = [
       "Javascript",
       "ECMAScript",
       "WordPress",
+    ],
+  },
+  {
+    id: 2,
+    name: "Dockabl App",
+    tag: "Work management app",
+    description: "Work management app",
+    url: "app.dockabl.com",
+    logo: DockablLogo,
+    color: {
+      code: "#335aff",
+      theme: "dark",
+    },
+    about: [
+      "An employee experience platform, that enhances productivity, enables continuous performance & drives engagement in an effective way.",
+      "A SAAS based tool, we’re nimble & flexible, with a superior interface & a rich feature set like Objectives & Key Results, Reviews, Recognition, Feedback, etc",
+    ],
+    images: [],
+    technologies: [
+      "Front-End",
+      "HTML5",
+      "CSS3 preprocessed with SASS",
+      "Javascript",
+      "AngularJS",
+      "React",
+      "ECMAScript",
+      "Webpack",
     ],
   },
 ];

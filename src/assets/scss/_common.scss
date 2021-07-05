@@ -49,17 +49,6 @@ a {
   height: auto;
 }
 
-.pointer {
-  cursor: pointer;
-}
-
-// have to remove later
-.my-container {
-  max-width: 1180px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
 .reset-ul {
   margin: 0;
   padding: 0;
@@ -84,27 +73,25 @@ a {
   }
 }
 
-.not-found {
-  min-height: 50vh;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  background-color: #f1f1f1;
-  p {
-    font-weight: 900;
-    font-size: 60px;
-    line-height: 1;
-    max-width: 255px;
+.position-relative {
+  position: relative;
+}
 
-    span {
-      margin-top: 15px;
-      display: block;
-      font-size: 16px;
-      font-weight: 300;
-      line-height: 1.4;
-    }
-  }
-  @include tab {
-    min-height: calc(100vh - 217px);
-  }
+.display-flex {
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+.align-items-end {
+  align-items: flex-end;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
 }
