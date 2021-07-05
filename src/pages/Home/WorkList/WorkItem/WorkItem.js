@@ -38,7 +38,7 @@ const StyledTitle = styled.div`
   font-weight: 600;
   font-size: 28px;
   line-height: 1.6;
-  color: var(--color-white);
+  color: #fff;
   span {
     display: block;
     font-weight: 400;

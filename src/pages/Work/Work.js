@@ -51,7 +51,7 @@ const StyledPageHeader = styled.div`
 const StyledTitle = styled.div`
   margin-bottom: 30px;
   h3 {
-    font-size: 2.2rem;
+    font-size: 1.5rem;
     margin: 0;
   }
   p {
@@ -141,7 +141,7 @@ const StyledLetsTalk = styled.div`
     color: var(--color-work);
     border-color: var(--color-work);
     &:hover {
-      color: var(--color-white);
+      color: #fff;
       background-color: var(--color-work);
     }
   }
@@ -158,7 +158,7 @@ const StyledFooterHomeBtn = styled.div`
   padding-bottom: 30px;
   a {
     display: inline-block;
-    color: var(--color-white);
+    color: #fff;
     font-weight: 600;
     font-size: 14px;
     line-height: 1.6;
@@ -248,6 +248,7 @@ const Work = () => {
             <StyledWorkSection>
               <StyledTitle>
                 <h3>About Project</h3>
+                <p>Little bit information about the project</p>
               </StyledTitle>
 
               {workItem.about ? (

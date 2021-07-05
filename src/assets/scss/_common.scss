@@ -16,13 +16,13 @@ html {
 
 body {
   font-weight: normal;
-  color: var(--theme-light-text);
+  color: var(--text-color);
   min-height: 100vh;
   min-width: 100vw;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
-  background-color: var(--theme-light-bg);
+  background-color: #fff;
   overflow-x: hidden;
 }
 
@@ -68,7 +68,7 @@ a {
   transition: all 0.2s ease;
 
   &:hover {
-    color: var(--color-white);
+    color: #fff;
     background-color: var(--text-color);
   }
 }

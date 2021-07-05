@@ -1,13 +1,13 @@
 .back-btn {
   background-color: var(--color-work);
   display: block;
-  color: var(--color-white);
+  color: #fff;
   text-decoration: none;
   display: flex;
   align-items: center;
 
   &:hover {
-    color: var(--color-white);
+    color: #fff;
     opacity: 0.8;
   }
   svg {
