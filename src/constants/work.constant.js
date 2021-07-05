@@ -12,7 +12,6 @@ export const workList = [
     name: "Clink Website",
     tag: "Feedback sharing app for teams",
     description: "Feedback sharing app for teams",
-    // url: "https://www.clink.work",
     url: "https://www.linkedin.com/company/clinkatwork/",
     logo: clinkLogo,
     color: {
@@ -20,8 +19,9 @@ export const workList = [
       theme: "dark",
     },
     about: [
-      "Clink is a feedback sharing app for teams, that helps you share, organize & analyze feedback, especially for remote working.",
-      "By doing so, we enable continuous performance & development for teams.",
+      "Building a visually striking website of application Clink with audio, video, images, and animated elements whilst remaining fast to use across a wide range of devices. Clink is a feedback sharing app for teams, that helps you share, organize & analyze feedback, especially for remote working.",
+      "The clink team approached me to develop an interactive and smooth front-end experience for the Clink - Feedback sharing app for teams. The project required solutions to produce a website that matched the detailed designs and interactivity concepts provided by the Clink design team whilst remaining fast to use across a wide range of devices. ",
+      "To save on overall cost and reduce development time, I built the website on WordPress and Sass Bootstrap. I have given a lot of out-of-the-box features such as Custom Image plus video slider with next and previous actions (How it works section), Show videos from Youtube API with custom actions, Podcast page with HTML Audio, Blog pages, and responsive layouts which I customized to respect the designs.",
     ],
     images: [
       {
@@ -46,11 +46,13 @@ export const workList = [
       },
     ],
     technologies: [
-      "HTML5",
-      "CSS3 preprocessed with SASS",
+      "Semantic HTML",
       "Javascript",
+      "Responsive CSS with mobile first approach",
+      "Sass/Scss",
       "ECMAScript",
       "WordPress",
+      "Bootstrap",
     ],
   },
   {
@@ -65,17 +67,20 @@ export const workList = [
       theme: "dark",
     },
     about: [
-      "An employee experience platform, that enhances productivity, enables continuous performance & drives engagement in an effective way.",
-      "A SAAS based tool, we’re nimble & flexible, with a superior interface & a rich feature set like Objectives & Key Results, Reviews, Recognition, Feedback, etc",
+      "Dockabl is a SAAS-based employee experience platform. Some of their features include Objective setting and check-ins through which clients can define and measure their objectives. On-going Reviews assess individuals, and teams on objectives, skills, and competencies. Crowd-source Recognition fosters a positive and collaborative work culture by recognizing individuals and teams on an ongoing basis.",
+      "I was the Frontend/Software developer for the Dockabl Web Application and initial dockabl website in 2017 and worked closely with the company for 2 years and 8 months. By mid-2019, Dockabl had successfully raised a total investment fund of 1.3 million dollars.",
+      "We develop Dockabl Web Application with the help of angularjs framework and CSS preprocessed SASS. Build Recognition with catalog module for mobile as Progress web application using React library.",
+      "Here I partner with the design team to execute user interfaces and design systems and provide assistance to the back-end developers in troubleshooting and coding.",
+      "Also Revamped and maintained the company website Dockabl(https://www.dockabl.com/) with a focus on SEO using code technologies like HTML, CSS/Sass, Javascript, JQuery, and Php.",
     ],
     images: [],
     technologies: [
-      "Front-End",
-      "HTML5",
-      "CSS3 preprocessed with SASS",
-      "Javascript",
+      "Front-End development",
       "AngularJS",
       "React",
+      "Javascript",
+      "CSS3 preprocessed with Sass",
+      "Semantic HTML",
       "ECMAScript",
       "Webpack",
     ],

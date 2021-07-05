@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { BreakPoints, NAME } from "../../constants";
+import { BreakPoints, NAME, PrimaryNav } from "../../constants";
 import NavLinks from "../NavLinks/NavLinks";
 import Container from "../../elements/Container";
 
@@ -43,7 +43,7 @@ const Header = () => {
             {" "}
             <Link to="/">{NAME}</Link>{" "}
           </StyledLogo>
-          <NavLinks />
+          <NavLinks viewOn="tab" links={PrimaryNav} />
         </StyledHeader>
       </Container>
     </>

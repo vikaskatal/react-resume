@@ -1,14 +1,24 @@
 import React from "react";
 import styled, { css } from "styled-components";
 import PropTypes from "prop-types";
-import {
-  EMAIL_ADDRESS,
-  RESUME_URL,
-  LINKEDIN_URL,
-  BreakPoints,
-} from "../../constants";
+import classNames from "classnames";
+import { BreakPoints } from "../../constants";
 
 const StyledNav = styled.ul`
+  display: block;
+  li {
+    margin-top: 20px;
+  }
+  @media (min-width: ${BreakPoints.small}px) {
+    display: flex;
+    li {
+      margin-top: 0px;
+      & + li {
+        margin-left: 20px;
+      }
+    }
+  }
+
   a {
     text-decoration: none;
     opacity: 1;
@@ -19,55 +29,57 @@ const StyledNav = styled.ul`
   }
 
   ${(props) =>
-    props.navFor === "footer"
-      ? css`
-          display: block;
-          margin-bottom: 50px;
-          li + li {
-            margin-left: 0;
-            margin-top: 25px;
-          }
-          @media (min-width: ${BreakPoints.small}px) {
-            display: none;
-          }
-        `
-      : css`
-          display: flex;
-          li + li {
-            margin-left: 20px;
-          }
-          @media (max-width: ${BreakPoints.small - 1}px) {
-            display: none;
-          }
-        `}
+    props.viewOn === "mobile" &&
+    css`
+      display: block;
+      @media (min-width: ${BreakPoints.small}px) {
+        display: none;
+      }
+    `}
+
+  ${(props) =>
+    props.viewOn === "tab" &&
+    css`
+      display: flex;
+      @media (max-width: ${BreakPoints.small - 1}px) {
+        display: none;
+      }
+    `}
 `;
 
-const NavLinks = ({ navFor }) => {
+const NavLinks = ({ viewOn, links }) => {
   return (
-    <StyledNav className="reset-ul" navFor={navFor}>
-      <li>
-        <a rel="noopener noreferrer" target="_blank" href={RESUME_URL}>
-          Download resume
-        </a>
-      </li>
-      <li>
-        <a rel="noopener noreferrer" target="_blank" href={LINKEDIN_URL}>
-          Linked In
-        </a>
-      </li>
-      <li>
-        <a href={`mailto:${EMAIL_ADDRESS}`}>Get in touch</a>
-      </li>
+    <StyledNav className="reset-ul" viewOn={viewOn}>
+      {links.map(({ label, url }) => (
+        <li key={label.split(" ")}>
+          {label === "Get in touch" ||
+          label === "Contact" ||
+          label === "Email" ? (
+            <a href={`mailto:${url}`}> {label} </a>
+          ) : label === "Phone" ? (
+            <a href={`tel:${url}`}> {label} </a>
+          ) : (
+            <a rel="noopener noreferrer" target="_blank" href={url}>
+              {" "}
+              {label}{" "}
+            </a>
+          )}
+        </li>
+      ))}
     </StyledNav>
   );
 };
 
 NavLinks.propTypes = {
-  navFor: PropTypes.string,
+  viewOn: PropTypes.string,
+  links: PropTypes.shape({
+    label: PropTypes.string,
+    url: PropTypes.string,
+  }).isRequired,
 };
 
 NavLinks.defaultProps = {
-  navFor: "",
+  viewOn: "",
 };
 
 export default NavLinks;

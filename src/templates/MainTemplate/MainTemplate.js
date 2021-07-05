@@ -5,7 +5,7 @@ import ChildrenProp from "../../prop-types/ChildrenProp";
 
 const MainTemplate = ({ children, homepage }) => {
   return (
-    <main className={homepage && "home-page"}>
+    <main>
       <Header />
       <>{children}</>
       <Footer />

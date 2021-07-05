@@ -11,7 +11,7 @@ import LazyImage from "../../components/LazyImage/LazyImage";
 import placeholderImage from "../../assets/images/placeholder_image.png";
 import Container from "../../elements/Container";
 
-const StyledPageHeader = styled.div`
+const StyledPageHeader = styled.header`
   background-color: var(--color-work);
   .title {
     padding: 40px 0 20px;
@@ -71,6 +71,7 @@ const StyledWorkSection = styled.section`
   .info {
     opacity: 0.7;
     margin: 0;
+    font-size: 1.125rem;
   }
 
   p.info + p.info {
@@ -152,7 +153,7 @@ const StyledLetsTalk = styled.div`
   }
 `;
 
-const StyledFooterHomeBtn = styled.div`
+const StyledFooterHomeBtn = styled.footer`
   background-color: var(--color-work);
   padding-top: 30px;
   padding-bottom: 30px;
@@ -242,7 +243,7 @@ const Work = () => {
               )}
             </Container>
           </StyledPageHeader>
-          {/* Header */}
+          {/* Page Header */}
 
           <Container>
             <StyledWorkSection>
@@ -271,7 +272,7 @@ const Work = () => {
 
             <StyledWorkSection>
               <StyledTitle>
-                <h3>Technologies Used</h3>
+                <h3>Technical Sheet</h3>
                 <p>
                   Code technologies I got involved with while working on this
                   project
@@ -351,7 +352,7 @@ const Work = () => {
               </Link>
             </Container>
           </StyledFooterHomeBtn>
-          {/* Back to Home Button */}
+          {/* Footer Back to Home Button */}
         </div>
       )}
     </>
