@@ -1,15 +1,15 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import styled from "styled-components";
-import MainTemplate from "../../templates/MainTemplate/MainTemplate";
-import Info from "./Info/Info";
-import WorkList from "./WorkList/WorkList";
-import { ABOUT_ME, workList } from "../../constants";
-
-const StyledHomePage = styled.div`
-  background-color: #1b1d20;
-  color: #cecece;
-`;
+import HomeTemplate from "../../templates/HomeTemplate";
+import Projects from "./Projects/Projects";
+import { ABOUT_ME } from "../../constants";
+import Container from "../../elements/Container";
+import {
+  HomePageContainer,
+  InfoContainer,
+  InfoContentContainer,
+  InfoContent,
+} from "./Home.styles";
 
 const Home = () => {
   return (
@@ -18,13 +18,20 @@ const Home = () => {
         <title>Home</title>
         <meta name="description" content="" />
       </Helmet>
-      <StyledHomePage>
-        <MainTemplate>
-          {/* homepage */}
-          <Info info={ABOUT_ME} />
-          <WorkList list={workList} />
-        </MainTemplate>
-      </StyledHomePage>
+
+      <HomePageContainer>
+        <HomeTemplate>
+          <Container>
+            <InfoContainer>
+              <InfoContentContainer>
+                <InfoContent>{ABOUT_ME}</InfoContent>
+              </InfoContentContainer>
+            </InfoContainer>
+
+            <Projects />
+          </Container>
+        </HomeTemplate>
+      </HomePageContainer>
     </>
   );
 };

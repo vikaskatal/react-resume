@@ -1,6 +1,7 @@
 :root {
   --text-color: #1b1d20;
-  --color-work: #1b1d20;
+  --themed-font-work: #fff;
+  --themed-color-work: #1b1d20;
 }
 
 // Breakpoints
@@ -54,31 +55,31 @@ $bp-large4k: 3840px;
 }
 
 @mixin airMM {
-  @media only screen and (min-width: $bp-medium - 1) {
+  @media only screen and (max-width: $bp-medium - 1) {
     @content;
   }
 }
 
 @mixin desktopsMM {
-  @media only screen and (min-width: $bp-large - 1) {
+  @media only screen and (max-width: $bp-large - 1) {
     @content;
   }
 }
 
 @mixin desktops-hdMM {
-  @media only screen and (min-width: $bp-largeHd - 1) {
+  @media only screen and (max-width: $bp-largeHd - 1) {
     @content;
   }
 }
 
 @mixin desktops-2kMM {
-  @media only screen and (min-width: $bp-large2k - 1) {
+  @media only screen and (max-width: $bp-large2k - 1) {
     @content;
   }
 }
 
 @mixin desktops-4kMM {
-  @media only screen and (min-width: $bp-large4k - 1) {
+  @media only screen and (max-width: $bp-large4k - 1) {
     @content;
   }
 }

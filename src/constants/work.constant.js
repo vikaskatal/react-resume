@@ -6,22 +6,27 @@ import clinkLogo from "../assets/images/clink/clink_logo.png";
 
 import DockablLogo from "../assets/images/dockabl/dockabl_logo.png";
 
-export const workList = [
+export const WorkPageTheme = {
+  LIGHT: "LIGHT",
+  DARK: "DARK",
+};
+
+export const WorkList = [
   {
     id: 1,
-    name: "Clink Website",
+    title: "Clink Website",
     tag: "Feedback sharing app for teams",
     description: "Feedback sharing app for teams",
     url: "https://www.linkedin.com/company/clinkatwork/",
     logo: clinkLogo,
     color: {
       code: "#efb959",
-      theme: "dark",
+      theme: WorkPageTheme.DARK,
     },
     about: [
       "Building a visually striking website of application Clink with audio, video, images, and animated elements whilst remaining fast to use across a wide range of devices. Clink is a feedback sharing app for teams, that helps you share, organize & analyze feedback, especially for remote working.",
       "The clink team approached me to develop an interactive and smooth front-end experience for the Clink - Feedback sharing app for teams. The project required solutions to produce a website that matched the detailed designs and interactivity concepts provided by the Clink design team whilst remaining fast to use across a wide range of devices. ",
-      "To save on overall cost and reduce development time, I built the website on WordPress and Sass Bootstrap. I have given a lot of out-of-the-box features such as Custom Image plus video slider with next and previous actions (How it works section), Show videos from Youtube API with custom actions, Podcast page with HTML Audio, Blog pages, and responsive layouts which I customized to respect the designs.",
+      "To save on overall cost and reduce development time, I built the website on WordPress and Sass Bootstrap. I have given a lot of out-of-the-box features such as Custom image-plus-video slider with next & previous actions (How it works section), Show videos from Youtube API with custom actions, Podcast page with HTML Audio, Blog pages, and Responsive layouts which I customized to respect the designs.",
     ],
     images: [
       {
@@ -57,14 +62,14 @@ export const workList = [
   },
   {
     id: 2,
-    name: "Dockabl App",
+    title: "Dockabl App",
     tag: "Work management app",
     description: "Work management app",
     url: "app.dockabl.com",
     logo: DockablLogo,
     color: {
       code: "#335aff",
-      theme: "dark",
+      theme: WorkPageTheme.DARK,
     },
     about: [
       "Dockabl is a SAAS-based employee experience platform. Some of their features include Objective setting and check-ins through which clients can define and measure their objectives. On-going Reviews assess individuals, and teams on objectives, skills, and competencies. Crowd-source Recognition fosters a positive and collaborative work culture by recognizing individuals and teams on an ongoing basis.",

@@ -1,4 +1,4 @@
-export { workList } from "./work.constant";
+export { WorkList, WorkPageTheme } from "./work.constant";
 export { Routes } from "./routes.constant";
 
 export const FIRST_NAME = "Vikas";
@@ -49,8 +49,18 @@ export const SecondaryNav = [
     label: "Instagram",
     url: "https://www.instagram.com/vikukatal/",
   },
+  {
+    label: "View project code",
+    url: "https://github.com/vikaskatal/react-resume",
+  },
   // {
   //   label: 'Email',
   //   url: EMAIL_ADDRESS,
   // },
 ];
+
+export const NavLinkView = {
+  MOBILE: "mobile",
+  TAB: "tab",
+  DESKTOP: "desktop",
+};

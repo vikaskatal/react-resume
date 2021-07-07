@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
+import placeholderImage from "../../assets/images/placeholder_image.png";
 import PropTypes from "prop-types";
 
-function LazyImage({ url, alt, placeholder }) {
+function LazyImage({ url, alt }) {
   const [imgSrc, setImgSrc] = useState(null);
 
   useEffect(() => {
@@ -15,12 +16,12 @@ function LazyImage({ url, alt, placeholder }) {
   }, []);
 
   const handleError = () => {
-    setImgSrc(placeholder);
+    setImgSrc(placeholderImage);
   };
 
   return (
     <img
-      src={imgSrc ? imgSrc : placeholder}
+      src={imgSrc ? imgSrc : placeholderImage}
       className=""
       alt={alt}
       onError={handleError}

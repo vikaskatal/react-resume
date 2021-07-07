@@ -1,10 +1,34 @@
-import React from "react";
 import styled from "styled-components";
-import { ReactComponent as IconArrow } from "../../../../assets/images/arrow.svg";
-import { Link } from "react-router-dom";
-import { BreakPoints } from "../../../../constants";
+import { BreakPoints } from "../../../constants";
 
-const StyledWorkItem = styled.a`
+export const ListContainer = styled.div`
+  padding-top: 40px;
+  padding-bottom: 40px;
+  @media (min-width: ${BreakPoints.small}px) {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+`;
+
+export const Title = styled.h3`
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 35px;
+  letter-spacing: 1px;
+`;
+
+export const List = styled.div`
+  display: block;
+  max-width: 790px;
+  @media (min-width: ${BreakPoints.small}px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 45px 122px;
+  }
+`;
+
+export const ListItem = styled.div`
   display: block;
   font-size: 28px;
   text-decoration: none;
@@ -34,7 +58,7 @@ const StyledWorkItem = styled.a`
   }
 `;
 
-const StyledTitle = styled.div`
+export const ProjectTitle = styled.div`
   font-weight: 600;
   font-size: 28px;
   line-height: 1.6;
@@ -48,19 +72,3 @@ const StyledTitle = styled.div`
     font-size: 32px;
   }
 `;
-
-const WorkItem = ({ item: { id, name, tag } }) => {
-  return (
-    <Link to={`work/${id}`} component={StyledWorkItem}>
-      <StyledTitle>
-        {" "}
-        {name} <span> {tag} </span>{" "}
-      </StyledTitle>
-      <span className="arr">
-        <IconArrow />
-      </span>
-    </Link>
-  );
-};
-
-export default WorkItem;
