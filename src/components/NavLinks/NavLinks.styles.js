@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled, { css, keyframes } from "styled-components";
 import { BreakPoints, NavLinkView } from "../../constants";
 
 export const Nav = styled.ul`
@@ -36,11 +36,31 @@ export const NavItem = styled.li`
   }
 `;
 
-export const NavLink = styled.a`
+const LinkStyle = `
   text-decoration: none;
   opacity: 1;
   transition: opacity 0.2s ease-in-out;
   &:hover {
     opacity: 0.8;
+  }
+`;
+
+export const NavLink = styled.a`
+  ${LinkStyle}
+`;
+
+const copy = keyframes`
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+`;
+
+export const NavLinkStyle = styled.span`
+  ${LinkStyle}
+  &.copy-success img {
+    animation: ${copy} 0.2s linear;
   }
 `;
